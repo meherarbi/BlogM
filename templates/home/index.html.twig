@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+{% if carousel %}
+    {{ include("base/carousel.html.twig", {'carousel': carousel }) }}
+{% else %}
+    <img src="images/welcome.jpg" class="d-block w-100 h-50">
+{% endif %}
+<h4>Nos articles</h4>
+<div class="row article-container ">
+
+{% for articles in articles %}
+<div class="col-md-3 ">
+<div class="articles-item text-center">
+
+<div class="card" style="width: 18rem;">
+ <a href="{{ path('show',{'slug':articles.slug}) }}" ><img src="/uploads/{{ articles.image }}" class="card-img-top" alt="{{articles.titre}}"></a>
+  <div class="card-body">
+    <figcaption><h5>{{ articles.titre }}</h5></figcaption>
+    
+    
+  </div>
+</div>
+</div>
+</div>
+
+{% endfor %}
+</div>
+
+
+{% endblock %}

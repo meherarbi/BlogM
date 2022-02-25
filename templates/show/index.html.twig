@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<div class="container">
+<a href="{{path('home')}}"> <button type="button" class="btn btn-round">Retour</button></a>
+<br>
+<br>
+    <div class="img-fluid" >
+        <img src="/uploads/{{ article.image }}"  alt="{{article.titre}}"  width="20%" height="20%"/>
+    </div>
+
+    <div class="content">
+    <p class="text-center" >{{article.sousTitre | raw}}</p>
+    <p class="content" >
+    {{article.description | raw}}
+    </p>
+    </div>
+    <p class="date">
+    Publie le {{article.createdAt | date("d/m/Y")}} a {{article.createdAt | date("H:i")}} 
+    </p>
+
+{% endblock %}
