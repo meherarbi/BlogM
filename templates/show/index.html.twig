@@ -1,23 +1,29 @@
-{% extends "base.html.twig" %}
 
+{% extends 'base.html.twig' %}
 {% block body %}
 
 <div class="container">
-<a href="{{path('home')}}"> <button type="button" class="btn btn-round">Retour</button></a>
+ <a href="{{path('home')}}"> <button type="button" class="btn btn-round">Retour</button></a>
 <br>
 <br>
-    <div class="img-fluid" >
-        <img src="/uploads/{{ article.image }}"  alt="{{article.titre}}"  width="20%" height="20%"/>
+<section class="section" >
+    <div >
+        <img src="/uploads/{{ article.image }}"  alt="{{article.titre}}" class="figure-img img-fluid rounded"  />
     </div>
-
+    
     <div class="content">
-    <p class="text-center" >{{article.sousTitre | raw}}</p>
-    <p class="content" >
-    {{article.description | raw}}
-    </p>
-    </div>
-    <p class="date">
+        <p class="text-center" >{{article.titre | raw}}</p>
+        <p class="content" >
+         {{article.description | raw}}
+        </p>
+         <p class="date">
     Publie le {{article.createdAt | date("d/m/Y")}} a {{article.createdAt | date("H:i")}} 
     </p>
+    </div>
+   
+    
+    
+    </section>
+    </div>
 
 {% endblock %}

@@ -1,8 +1,10 @@
+
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block body %}
+<div class="container">
 {% if carousel %}
     {{ include("base/carousel.html.twig", {'carousel': carousel }) }}
 {% else %}
@@ -15,7 +17,7 @@
 <div class="col-md-3 ">
 <div class="articles-item text-center">
 
-<div class="card" style="width: 18rem;">
+<div class="card" >
  <a href="{{ path('show',{'slug':articles.slug}) }}" ><img src="/uploads/{{ articles.image }}" class="card-img-top" alt="{{articles.titre}}"></a>
   <div class="card-body">
     <figcaption><h5>{{ articles.titre }}</h5></figcaption>
@@ -28,6 +30,6 @@
 
 {% endfor %}
 </div>
-
+</div>
 
 {% endblock %}
