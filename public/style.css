@@ -1,76 +1,59 @@
+.btn {
+  background-color: #dc5e44;
+  color: white;
+  border-radius: 12px;
+}
 
-    
-    .btn{
-    background-color: #DC5E44 ;
-    color: white;
-    border-radius: 12px;
-    
-    }
-   
-    .text-center{
-        color:#DC5E44;
-        font-weight: bold;
-        font-size:30px;
-    }
-    .content{
-        text-align: justify;
-        font-family:'Roboto';
-        font-size: 12pt;
-        text-indent: 1.5em;
-        padding-left: 5%;
-        padding-right:5%;
-    }
-    .date{
-        font-style: italic;
-    }
-    .section{
-        background-color:white;
-        border-radius: 20px;
-        
-        
-    } 
-    .card {
-        border-radius: 20px;   
-    }
-    img.img{
-        width: auto;
-        height: auto;
-    }
-    .container {
-        margin-bottom:100%;
-    }
-    .navbar{
-       padding-left: 6%;
-        background-color: #E4E6EC;
-    }
+.text-center {
+  color: #dc5e44;
+  font-weight: bold;
+  font-size: 30px;
+}
+.content {
+  text-align: justify;
+  font-family: "Roboto";
+  font-size: 12pt;
+  text-indent: 1.5em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.date {
+  font-style: italic;
+}
+.section {
+  background-color: white;
+  border-radius: 20px;
+}
+.card {
+  border-radius: 20px;
+}
+img.img {
+  width: auto;
+  height: auto;
+}
+.container {
+  margin-bottom: 100%;
+}
+.navbar {
+  padding-left: 2%;
+  background-color: #e4e6ec;
+}
+.container {
+  margin: 2%;
+}
 
+* {
+  box-sizing: border-box;
+}
 
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
 
-
-    * {box-sizing:border-box}
-
-    /* Slideshow container */
-    .slideshow-container {
-      width: 100%;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-    
-    
-    
-    
-    
-    
-    
-
-   
-   
- 
-   
-      
-      
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
