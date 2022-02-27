@@ -10,20 +10,18 @@
     <div >
         <img src="/uploads/{{ article.image }}"  alt="{{article.titre}}" class="figure-img img-fluid rounded"  />
     </div>
-    
+
     <div class="content">
         <p class="text-center" >{{article.titre | raw}}</p>
         <p class="content" >
          {{article.description | raw}}
         </p>
          <p class="date">
-    Publie le {{article.createdAt | date("d/m/Y")}} a {{article.createdAt | date("H:i")}} 
-    </p>
+            Publie le {{article.createdAt | date("d/m/Y")}} a {{article.createdAt | date("H:i")}} 
+        </p>
     </div>
-   
     
-    
-    </section>
-    </div>
+</section>
+</div>
 
 {% endblock %}

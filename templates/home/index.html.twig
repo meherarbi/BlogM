@@ -8,21 +8,20 @@
 {% if carousel %}
     {{ include("base/carousel.html.twig", {'carousel': carousel }) }}
 {% else %}
-    <img src="images/welcome.jpg" class="d-block w-100 h-50">
+    <img src="/images/welcome.jpg" class="d-block w-100 h-50">
 {% endif %}
+<br>
 <h4>Nos articles</h4>
+<br>
 <div class="row article-container ">
 
 {% for articles in articles %}
 <div class="col-md-3 ">
 <div class="articles-item text-center">
-
 <div class="card" >
  <a href="{{ path('show',{'slug':articles.slug}) }}" ><img src="/uploads/{{ articles.image }}" class="card-img-top" alt="{{articles.titre}}"></a>
   <div class="card-body">
-    <figcaption><h5>{{ articles.titre }}</h5></figcaption>
-    
-    
+    <figcaption><h5>{{ articles.titre }}</h5></figcaption>  
   </div>
 </div>
 </div>

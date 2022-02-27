@@ -10,14 +10,15 @@
         {% endblock %}
         <link rel="stylesheet" href="/style.css">
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+            {{ encore_entry_script_tags('app') }}    
         {% endblock %}
     </head>
     
     <body>
-        {% include 'base/header.html.twig'%}
-         
+        {% include 'base/header.html.twig'%} 
         {% block body %}{% endblock %}
        {% include 'base/footer.html.twig'%}
     </body>
+    
 </html>
+

@@ -40,9 +40,37 @@
         margin-bottom:100%;
     }
     .navbar{
-        padding-left: 6%;
+       padding-left: 6%;
         background-color: #E4E6EC;
     }
-   
-   
+
+
+
+
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      width: 100%;
+      position: relative;
+      margin: auto;
+    }
     
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+
+   
+   
+ 
+   
+      
+      
